@@ -145,6 +145,7 @@ After that I finalized the best <b> Random Forest Model</b> that is given below:
 
 [Go Back](#back)
 
+<a id='h6.2'></a>
 #### 6.2. XGBoost:
 XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. So after Random Forest, we created XGBoost model to train our data. It followed same process that was followed by Random Forest before.
 
@@ -202,6 +203,7 @@ I finalized 2 XGB models that were giving best result.
 ![Screenshot_86](https://user-images.githubusercontent.com/46135898/68550250-f1c77000-0422-11ea-85c6-d28fc472bee8.png)
 <br><br><br>
 
+<a id='h7'></a>
 ### 7- Summerize Models with their results:
 In the end, we have finalized 3 models that are giving best results, 1 related to random forest and other 2 belongs to XGBoost, they are given below.
 
@@ -210,6 +212,7 @@ In the end, we have finalized 3 models that are giving best results, 1 related t
 <br><br><br>
 ![Screenshot_88](https://user-images.githubusercontent.com/46135898/68550550-8e8b0d00-0425-11ea-8278-5353b0c36889.png)
 
+<a id='conclusion'></a>
 # Conclusion
 So in this binary classification project named <b>"Credit Card Fraud Detection"</b>, the best model is <b>Random forest</b>, that is giving <br>
 <b>Accuracy Score</b>: 0.96<br>
@@ -217,7 +220,7 @@ So in this binary classification project named <b>"Credit Card Fraud Detection"<
 <b> roc-auc Score</b>: 0.95<br>
 <b>Log Loss</b>:1.45<br>
 <b>      On </b><br>
-n-estimator: 100
+<b>n-estimator</b>: 100
 
 
 
