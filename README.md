@@ -26,6 +26,6 @@ Identify fraudulent credit card transactions.
 [Conclusion](#conclusion)
 
 ### 1- Data Reading & Understanding:
-First we read <b>creditcard.csv</b> file in pandas and create its data frame and then we start understanding data by applying basic pandas statistical methods on the data frame.
+First we read <b>"creditcard.csv"</b> file in pandas and create its data frame and then we start understanding data by applying basic pandas statistical methods on the data frame.
 
 
