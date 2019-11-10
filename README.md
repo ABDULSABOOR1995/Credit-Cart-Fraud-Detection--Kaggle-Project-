@@ -52,7 +52,7 @@ Now we are able to make ML model for classification purpose. First of all, we ha
 
 First we'll apply <b> Grid Search</b> on Random Forest to find best hyperparametrs.
 
-After finding best hyperparametrs, we'll apply cross validation on Random forsest to find <b> average accuray score, f1-score, roc-auc score and log-loss.
+After finding best hyperparametrs, we'll apply cross validation on Random forsest to find <b> average accuray score, f1-score, roc-auc score and log-loss</b>.
 
 
 Then we extract features and make subset of best features by finding feature importance from random forest algo.
