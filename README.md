@@ -39,7 +39,7 @@ First I read the <b>"creditcard.csv"</b> file in pandas and created its data fra
 <a id='h2'></a>
 ### 2. Data Preparation: 
 The creditcard data was highly imbalanced. 99.83% of the transactions in the data set were not fraudulent while only 0.17% were fraudulent.Using the original data set would not prove to be a good idea for a very simple reason: Since over 99% of our transactions are non-fraudulent, an algorithm that always predicts that the transaction is non-fraudulent would achieve an accuracy higher than 99%. Nevertheless, that is the opposite of what we want. We do not want a 99% accuracy that is achieved by never labeling a transaction as fraudulent, we want to detect fraudulent transactions and label them as such.
-To create our balanced training data set, I took all of the fraudulent transactions in our data set and counted them. Then, I randomly selected the same number of non-fraudulent transactions and concatenated the two. After shuffling this newly created data set, I decided to output the class distributions once more to visualize the difference.<br>
+To create our balanced training data set, I took all of the fraudulent transactions in our data set and counted them. Then, I randomly selected the same number of non-fraudulent transactions and concatenated the two. After shuffling this newly created data set, I decided to output the class distributions once more to visualize the difference.<br><br>
 <b> Note: </b> The dataset we created wasn't completely balanced, The dataset contained 62.5% non-fraud transactions while 37.5% fraud transactions but it is good for making classification model. 
 
 <br><br><br>
