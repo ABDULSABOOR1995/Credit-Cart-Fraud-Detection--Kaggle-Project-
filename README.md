@@ -169,7 +169,7 @@ Then I applied Grid Search on a new subset of features and they all were giving 
 ![Screenshot_81](https://user-images.githubusercontent.com/46135898/68550243-e83e0800-0422-11ea-9126-fdbf465a8e7e.png)
 <br><br><br>
 
-Then we selected XGB hyperparameters with the best result.
+Then I selected XGB hyperparameters with the best result.
 
 <br><br><br>
 ![Screenshot_82](https://user-images.githubusercontent.com/46135898/68550244-e96f3500-0422-11ea-9a0c-da657bb04065.png)
@@ -204,7 +204,7 @@ I finalized 2 XGB models that were giving the best result.
 
 
 ### 7- Summerize Models with their results:
-In the end, we have finalized 3 models that are giving the best results, 1 related to random forest and the other 2 belongs to XGBoost, they are given below.
+In the end, I have finalized 3 models that are giving the best results, 1 related to random forest and the other 2 belongs to XGBoost, they are given below.
 
 <br><br><br>
 ![Screenshot_87](https://user-images.githubusercontent.com/46135898/68550549-8d59e000-0425-11ea-8954-fdc506cbf7df.png)
