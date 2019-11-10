@@ -28,7 +28,7 @@ Identify fraudulent credit card transactions.
 
 <a id='h1'></a>
 ### 1. Data Reading & Understanding:
-First I read <b>"creditcard.csv"</b> file in pandas and created its data frame and then I started understanding data by applying basic pandas statistical methods on the data frame.
+First I read the <b>"creditcard.csv"</b> file in pandas and created its data frame and then I started understanding data by applying basic pandas statistical methods on the data frame.
 
 <br><br><br>
 ![Screenshot_63](https://user-images.githubusercontent.com/46135898/68549133-b7f06c80-0416-11ea-9da3-94304628f9c2.png)
@@ -40,7 +40,7 @@ First I read <b>"creditcard.csv"</b> file in pandas and created its data frame a
 ### 2. Data Preparation: 
 The creditcard data was highly imbalanced. 99.83% of the transactions in the data set were not fraudulent while only 0.17% were fraudulent.Using the original data set would not prove to be a good idea for a very simple reason: Since over 99% of our transactions are non-fraudulent, an algorithm that always predicts that the transaction is non-fraudulent would achieve an accuracy higher than 99%. Nevertheless, that is the opposite of what we want. We do not want a 99% accuracy that is achieved by never labeling a transaction as fraudulent, we want to detect fraudulent transactions and label them as such.
 To create our balanced training data set, I took all of the fraudulent transactions in our data set and counted them. Then, I randomly selected the same number of non-fraudulent transactions and concatenated the two. After shuffling this newly created data set, I decided to output the class distributions once more to visualize the difference.
-<b> Note: </b> The data set we created wasn't completely balanced, The dataset contained 62.5% non-fraud transactions while 37.5% fraud transactions but it is good for making classification model. 
+<b> Note: </b> The dataset we created wasn't completely balanced, The dataset contained 62.5% non-fraud transactions while 37.5% fraud transactions but it is good for making classification model. 
 
 <br><br><br>
 ![Screenshot_64](https://user-images.githubusercontent.com/46135898/68549135-b9ba3000-0416-11ea-9e18-266f32799ce3.png)
@@ -55,7 +55,7 @@ And then we created <b>train.csv</b> and <b>test.csv</b>.
 
 <a id='h3'></a>
 ### 3. Data Visualization:
-After that I visualized data distribution between both classes with the help of different charts. I also made charts to visualize Correlation of all features with target variable(Class).
+After that, I visualized data distribution between both classes with the help of different charts. I also made charts to visualize the Correlation of all features with the target variable(Class).
 
 <br><br><br>
 ![Screenshot_64](https://user-images.githubusercontent.com/46135898/68549135-b9ba3000-0416-11ea-9e18-266f32799ce3.png)
@@ -73,7 +73,7 @@ After that I visualized data distribution between both classes with the help of 
 
 <a id='h4'></a>
 ### 4. Feature Normalization:
-Feature normalization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. In this dataset I have only one feature named <b>"normalizedAmount"</b> having values greater than 1, except this feature, all other have values in range 0. So I applied feature normalization on <b>"normalizedAmount"</b>.
+Feature normalization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. In this dataset I have only one feature named <b>"normalizedAmount"</b> having values greater than 1, except this feature, all others have values in range 0. So I applied feature normalization on <b>"normalizedAmount"</b>.
 
 <br><br><br>
 ![Screenshot_69](https://user-images.githubusercontent.com/46135898/68549141-be7ee400-0416-11ea-9d56-ea234432e185.png)
@@ -83,7 +83,7 @@ Feature normalization makes the values of each feature in the data have zero-mea
 
 <a id='h5'></a>
 ### 5. Data Selection:
-Now I made subset of features that have high impact on target variable(class).
+Now I made a subset of features that have a high impact on the target variable(class).
 
 <br><br><br>
 ![Screenshot_70](https://user-images.githubusercontent.com/46135898/68549142-bf177a80-0416-11ea-9883-344eea41b549.png)
@@ -93,25 +93,25 @@ Now I made subset of features that have high impact on target variable(class).
 
 <a id='h6'></a>
 ### 6. Model Selection:
-From the past experience, I became to know that in Classification Algorithms, the best algorithms in terms of efficiency and accuracy are <b>Random Forest </b>and <b> XG Boost</b>, so I used both of them to make a model and then selected the better one from both of them.
+From the experience, I became to know that in Classification Algorithms, the best algorithms in terms of efficiency and accuracy are <b>Random Forest </b>and <b> XG Boost</b>, so I used both of them to make a model and then selected the better one from both of them.
 
 <a id='h6.1'></a>
 #### 6.1. Random Forest Model:
-Now I'm able to make ML model for classification purpose. First of all, I have choose <b> Random Forest</b> model. It is best supervised learning algorithm. It is considered as a highly accurate and robust method because of the number of decision trees participating in the process. So the process of creating model and training and testing model is given below:
+Now I'm able to make the ML model for classification purposes. First of all, I have chosen the Random Forest model. It is best supervised learning algorithm. It is considered as a highly accurate and robust method because of the number of decision trees participating in the process. So the process of creating model and training and testing model is given below:
 
-First I applied <b> Grid Search</b> on Random Forest to find best hyperparametrs.
+First I applied <b>Grid Search</b> on Random Forest to find the best hyperparameters.
 
 <br><br><br>
 ![Screenshot_71](https://user-images.githubusercontent.com/46135898/68549143-c048a780-0416-11ea-87d0-17729076561e.png)
 <br><br><br>
 
-After finding best hyperparametrs, I applied cross validation on Random forsest to find <b> average accuray score, f1-score, roc-auc score and log-loss</b>.
+After finding the best hyperparameters, I applied cross-validation on the Random forest to find <b>average accuracy score, f1-score, roc-auc score, and log-loss</b>.
 
 <br><br><br>
 ![Screenshot_72](https://user-images.githubusercontent.com/46135898/68549144-c0e13e00-0416-11ea-95d6-9373f83b5809.png)
 <br><br><br>
 
-Then I extracted features and made subset of best features by finding feature importance from random forest algo.
+Then I extracted features and made a subset of best features by finding feature importance from random forest algo.
 
 <br><br><br>
 ![Screenshot_73](https://user-images.githubusercontent.com/46135898/68549145-c2126b00-0416-11ea-8091-3424d496a37e.png)
@@ -119,7 +119,7 @@ Then I extracted features and made subset of best features by finding feature im
 ![Screenshot_74](https://user-images.githubusercontent.com/46135898/68549146-c50d5b80-0416-11ea-83c5-5207375c5ee2.png)
 <br><br><br>
 
-But features that I have extracted from random Forest algo(X11-X15) weren't giving result as good as  the features we extracted before by correlation(X1-X10). So I selected those features for training and testing purpose.
+But features that I have extracted from random Forest algo(X11-X15) weren't giving results as good as the features we extracted before by correlation(X1-X10). So I selected those features for training and testing purposes.
 
 <br><br><br>
 ![Screenshot_75](https://user-images.githubusercontent.com/46135898/68549147-c63e8880-0416-11ea-9e1c-650fa7574bbb.png)
@@ -147,32 +147,29 @@ After that I have finalized the best <b> Random Forest Model</b> that is given b
 
 <a id='h6.2'></a>
 #### 6.2. XGBoost:
-XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. So after Random Forest, we created XGBoost model to train our data. It followed same process that was followed by Random Forest before.
+XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. So after Random Forest, we created the XGBoost model to train our data. It followed the same process that was followed by Random Forest before.
 
-First I applied <b> Grid Search</b> on XGB to find best hyperparametrs.
+First I applied <b>Grid Search</b> on XGB to find the best hyperparameters.
 
-After that I tried to apply cross validation on XGB, but it was taking too much time. So first, I reduced number of a subset of features. To reduce the number of subset of features, first I extracted most relevant features from XGBoost algo.
+
+After that, I tried to apply cross-validation on XGB, but it was taking too much time. So first, I reduced the number of a subset of features. To reduce the number of the subset of features, first I extracted the most relevant features from XGBoost algo.
 
 <br><br><br>
 ![Screenshot_79](https://user-images.githubusercontent.com/46135898/68550239-e4aa8100-0422-11ea-930a-6014a5a897af.png)
 <br><br><br>
 
-The above process reduced the number of subset of features, and then the new new subset was X11-X16.
-
+The above process reduced the number of a subset of features, and then the new subset was <b>X11-X16</b>
 <br><br><br>
 ![Screenshot_80](https://user-images.githubusercontent.com/46135898/68550242-e70cdb00-0422-11ea-857e-4187f7127136.png)
 <br><br><br>
 
 
-Then I applied <b>Grid Search </b> on new subset of features and they all were giving the accuracy of 0.94. So I selected subset that have minimum number of features(they are X13-X16) and applied cross validation on them.
-You can see the result of cross validation:
-
+Then I applied Grid Search on a new subset of features and they all were giving the accuracy of 0.94. So I selected a subset that has a minimum number of features(they are X13-X16) and applied cross-validation on them. You can see the result of cross-validation:
 <br><br><br>
 ![Screenshot_81](https://user-images.githubusercontent.com/46135898/68550243-e83e0800-0422-11ea-9126-fdbf465a8e7e.png)
 <br><br><br>
 
-
-Then we selected XGB hyperparametrs with best result.
+Then we selected XGB hyperparameters with the best result.
 
 <br><br><br>
 ![Screenshot_82](https://user-images.githubusercontent.com/46135898/68550244-e96f3500-0422-11ea-9a0c-da657bb04065.png)
@@ -185,9 +182,7 @@ Now I trained and tested the model on training and testing data. It has given th
 ![Screenshot_83](https://user-images.githubusercontent.com/46135898/68550245-ea07cb80-0422-11ea-800d-70e5d8c4fdc3.png)
 <br><br><br>
 
-
-
-I finalized 2 XGB models that were giving best result.
+I finalized 2 XGB models that were giving the best result.
 
 <br><br><br>
 ![Screenshot_84](https://user-images.githubusercontent.com/46135898/68550246-eaa06200-0422-11ea-8562-72645d49fd75.png)
@@ -209,7 +204,7 @@ I finalized 2 XGB models that were giving best result.
 
 
 ### 7- Summerize Models with their results:
-In the end, we have finalized 3 models that are giving best results, 1 related to random forest and other 2 belongs to XGBoost, they are given below.
+In the end, we have finalized 3 models that are giving the best results, 1 related to random forest and the other 2 belongs to XGBoost, they are given below.
 
 <br><br><br>
 ![Screenshot_87](https://user-images.githubusercontent.com/46135898/68550549-8d59e000-0425-11ea-8954-fdc506cbf7df.png)
