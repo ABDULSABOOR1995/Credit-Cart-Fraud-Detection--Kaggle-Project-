@@ -197,12 +197,18 @@ I finalized 2 XGB models that were giving best result.
 #### Confusion Matrix of Best XGB Model:
 
 <br><br><br>
-(1)
 ![Screenshot_85](https://user-images.githubusercontent.com/46135898/68550247-ebd18f00-0422-11ea-83ed-76579c94cee4.png)
 <br><br><br>
-(2)
 ![Screenshot_86](https://user-images.githubusercontent.com/46135898/68550250-f1c77000-0422-11ea-85c6-d28fc472bee8.png)
 <br><br><br>
+
+### 7- Summerize Models with their results:
+In the end, we have finalized 3 models that are giving best results, 1 related to random forest and other 2 belongs to XGBoost, they are given below.
+
+<br><br><br>
+![Screenshot_87](https://user-images.githubusercontent.com/46135898/68550549-8d59e000-0425-11ea-8954-fdc506cbf7df.png)
+<br><br><br>
+![Screenshot_88](https://user-images.githubusercontent.com/46135898/68550550-8e8b0d00-0425-11ea-8278-5353b0c36889.png)
 
 
 
