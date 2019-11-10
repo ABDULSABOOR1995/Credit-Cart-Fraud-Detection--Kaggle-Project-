@@ -215,8 +215,8 @@ So in this binary classification project named <b>"Credit Card Fraud Detection"<
 <b>Accuracy Score</b>: 0.96<br>
 <b> F1-Score</b>: 0.94<br>
 <b> roc-auc Score</b>: 0.95<br>
-<b>Log Loss</b>:1.45
-<b>      On </b>
+<b>Log Loss</b>:1.45<br>
+<b>      On </b><br>
 n-estimator: 100
 
 
