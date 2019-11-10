@@ -145,4 +145,66 @@ After that I finalized the best <b> Random Forest Model</b> that is given below:
 
 [Go Back](#back)
 
+#### 6.2. XGBoost:
+XGBoost is an algorithm that has recently been dominating applied machine learning and Kaggle competitions for structured or tabular data. XGBoost is an implementation of gradient boosted decision trees designed for speed and performance. So after Random Forest, we created XGBoost model to train our data. It followed same process that was followed by Random Forest before.
+
+First I applied <b> Grid Search</b> on XGB to find best hyperparametrs.
+
+After that I tried to apply cross validation on XGB, but it was taking too much time. So first, I reduced number of a subset of features. To reduce the number of subset of features, first I extracted most relevant features from XGBoost algo.
+
+<br><br><br>
+![Screenshot_79](https://user-images.githubusercontent.com/46135898/68550239-e4aa8100-0422-11ea-930a-6014a5a897af.png)
+<br><br><br>
+
+The above process reduced the number of subset of features, and then the new new subset was X11-X16.
+
+<br><br><br>
+![Screenshot_80](https://user-images.githubusercontent.com/46135898/68550242-e70cdb00-0422-11ea-857e-4187f7127136.png)
+<br><br><br>
+
+
+Then I applied <b>Grid Search </b> on new subset of features and they all were giving the accuracy of 0.94. So I selected subset that have minimum number of features(they are X13-X16) and applied cross validation on them.
+You can see the result of cross validation:
+
+<br><br><br>
+![Screenshot_81](https://user-images.githubusercontent.com/46135898/68550243-e83e0800-0422-11ea-9126-fdbf465a8e7e.png)
+<br><br><br>
+
+
+Then we selected XGB hyperparametrs with best result.
+
+<br><br><br>
+![Screenshot_82](https://user-images.githubusercontent.com/46135898/68550244-e96f3500-0422-11ea-9a0c-da657bb04065.png)
+<br><br><br>
+
+
+Now I trained and tested the model on training and testing data. It has given the following result.
+
+<br><br><br>
+![Screenshot_83](https://user-images.githubusercontent.com/46135898/68550245-ea07cb80-0422-11ea-800d-70e5d8c4fdc3.png)
+<br><br><br>
+
+
+
+I finalized 2 XGB models that were giving best result.
+
+<br><br><br>
+![Screenshot_84](https://user-images.githubusercontent.com/46135898/68550246-eaa06200-0422-11ea-8562-72645d49fd75.png)
+<br><br><br>
+
+
+
+#### Confusion Matrix of Best XGB Model:
+
+<br><br><br>
+![Screenshot_85](https://user-images.githubusercontent.com/46135898/68550247-ebd18f00-0422-11ea-83ed-76579c94cee4.png)
+<br><br><br>
+![Screenshot_86](https://user-images.githubusercontent.com/46135898/68550250-f1c77000-0422-11ea-85c6-d28fc472bee8.png)
+<br><br><br>
+
+
+
+
+
+
 
