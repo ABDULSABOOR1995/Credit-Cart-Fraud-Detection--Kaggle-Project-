@@ -210,6 +210,15 @@ In the end, we have finalized 3 models that are giving best results, 1 related t
 <br><br><br>
 ![Screenshot_88](https://user-images.githubusercontent.com/46135898/68550550-8e8b0d00-0425-11ea-8278-5353b0c36889.png)
 
+# Conclusion
+So in this binary classification project named <b>"Credit Card Fraud Detection"</b>, the best model is <b>Random forest</b>, that is giving <br>
+<b>Accuracy Score</b>: 0.96<br>
+<b> F1-Score</b>: 0.94<br>
+<b> roc-auc Score</b>: 0.95<br>
+<b>Log Loss</b>:1.45
+<b>      On </b>
+n-estimator: 100
+
 
 
 
