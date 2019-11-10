@@ -28,4 +28,13 @@ Identify fraudulent credit card transactions.
 ### 1- Data Reading & Understanding:
 First we read <b>"creditcard.csv"</b> file in pandas and create its data frame and then we start understanding data by applying basic pandas statistical methods on the data frame.
 
+### 2- Data Preparation: 
+
+### 3- Data Visualization:
+After that we visualize data distribution between both classes with the help of different charts. We'll also make charts to visualize Correlation of all features with target variable(Class).
+
+### 4- Feature Normalization:
+Feature normalization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. In this dataset we have only one feature named <b>"normalizedAmount"</b> having values greater than 1, except this feature, all other have values in range 0. So we apply feature normalization on <b>"normalizedAmount"</b>.
+
+
 
