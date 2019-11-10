@@ -12,6 +12,18 @@ It contains only numerical input variables which are the result of a PCA transfo
 Identify fraudulent credit card transactions.
 
 ## Table of Content:
+[1- Data Reading & Understanding](#h1)<br>
+[2- Data Preparation](#h2)<br>
+[3- Data Visualization](#h3)<br>
+[4- Feature Normalization](#h4)<br>
+[5- Data Selection](#h5)
+[6- Model Selection](#h6)<br>
+>[6.1. Random Forest Model](#h6.1)<br>
+[6.2. XGBoost](#h6.2)<br>
+
+[7- Summerize Models with their results](#h7)<br>
+
+[Conclusion](#conclusion)
 
 
 
